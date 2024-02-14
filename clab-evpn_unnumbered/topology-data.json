@@ -28,9 +28,9 @@
       "image": "quay.io/frrouting/frr:9.0.2",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-address": "172.20.20.2",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "2001:172:20:20::4",
+      "mgmt-ipv6-address": "2001:172:20:20::2",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
@@ -90,7 +90,7 @@
       "mgmt-ipv4-prefix-length": 24,
       "mgmt-ipv6-address": "2001:172:20:20::5",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "1a:10:02:00:00:00",
+      "mac-address": "1a:b1:02:00:00:00",
       "labels": {
         "clab-mgmt-net-bridge": "br-9414e37772d9",
         "clab-node-group": "",
@@ -115,11 +115,11 @@
       "image": "ghcr.io/nokia/srlinux:23.10.2",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-address": "172.20.20.4",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "2001:172:20:20::2",
+      "mgmt-ipv6-address": "2001:172:20:20::4",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "1a:6b:03:00:00:00",
+      "mac-address": "1a:06:03:00:00:00",
       "labels": {
         "clab-mgmt-net-bridge": "br-9414e37772d9",
         "clab-node-group": "",
@@ -148,7 +148,7 @@
       "mgmt-ipv4-prefix-length": 24,
       "mgmt-ipv6-address": "2001:172:20:20::3",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "1a:a2:04:00:00:00",
+      "mac-address": "1a:02:04:00:00:00",
       "labels": {
         "clab-mgmt-net-bridge": "br-9414e37772d9",
         "clab-node-group": "",
@@ -168,13 +168,13 @@
       "a": {
         "node": "spine",
         "interface": "e1-1",
-        "mac": "aa:c1:ab:95:9a:53",
+        "mac": "aa:c1:ab:2c:ef:57",
         "peer": "z"
       },
       "z": {
         "node": "leaf1",
         "interface": "e1-49",
-        "mac": "aa:c1:ab:30:8a:87",
+        "mac": "aa:c1:ab:8a:61:04",
         "peer": "a"
       }
     },
@@ -182,13 +182,13 @@
       "a": {
         "node": "spine",
         "interface": "e1-2",
-        "mac": "aa:c1:ab:fc:0c:4a",
+        "mac": "aa:c1:ab:3e:b5:fe",
         "peer": "z"
       },
       "z": {
         "node": "leaf2",
         "interface": "e1-49",
-        "mac": "aa:c1:ab:38:26:a5",
+        "mac": "aa:c1:ab:ab:b0:5d",
         "peer": "a"
       }
     },
@@ -196,13 +196,13 @@
       "a": {
         "node": "leaf1",
         "interface": "e1-1",
-        "mac": "aa:c1:ab:84:28:05",
+        "mac": "aa:c1:ab:9a:3e:22",
         "peer": "z"
       },
       "z": {
         "node": "frr1",
         "interface": "eth1",
-        "mac": "aa:c1:ab:67:fc:9a",
+        "mac": "aa:c1:ab:90:9e:13",
         "peer": "a"
       }
     },
@@ -210,13 +210,13 @@
       "a": {
         "node": "leaf2",
         "interface": "e1-1",
-        "mac": "aa:c1:ab:cb:10:a4",
+        "mac": "aa:c1:ab:4f:39:65",
         "peer": "z"
       },
       "z": {
         "node": "frr2",
         "interface": "eth1",
-        "mac": "aa:c1:ab:51:4d:d9",
+        "mac": "aa:c1:ab:55:3c:04",
         "peer": "a"
       }
     }

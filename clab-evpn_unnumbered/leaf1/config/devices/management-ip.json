@@ -1,6 +1,6 @@
 {
 	"ipv4_gateway":	"172.20.20.1",
-	"ipv6_gateway":	"fe80::a8c1:abff:fe67:fc9a",
+	"ipv6_gateway":	"fe80::a8c1:abff:fe90:9e13",
 	"ipv4":	"172.20.20.5/24",
 	"ipv6":	"2001:172:20:20::5/64"
 }

@@ -10,6 +10,7 @@ topology:
     linux:
       image: quay.io/frrouting/frr:9.0.2
 
+
   nodes:
     spine:
       type: ixrd3l

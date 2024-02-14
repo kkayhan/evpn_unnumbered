@@ -10,7 +10,7 @@ all:
         # ansible_connection: set ansible_connection variable if required
       hosts:
         frr1:
-          ansible_host: 172.20.20.4
+          ansible_host: 172.20.20.2
         frr2:
           ansible_host: 172.20.20.6
     nokia_srlinux:
@@ -25,6 +25,6 @@ all:
         leaf1:
           ansible_host: 172.20.20.5
         leaf2:
-          ansible_host: 172.20.20.2
+          ansible_host: 172.20.20.4
         spine:
           ansible_host: 172.20.20.3
