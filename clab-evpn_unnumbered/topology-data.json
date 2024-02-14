@@ -1,0 +1,224 @@
+{
+  "name": "evpn_unnumbered",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-9414e37772d9",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "2001:172:20:20::/64",
+        "ipv6-gw": "2001:172:20:20::1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "nodes": {
+    "frr1": {
+      "index": "0",
+      "shortname": "frr1",
+      "longname": "frr1",
+      "fqdn": "frr1.evpn_unnumbered.io",
+      "group": "",
+      "labdir": "/home/evpn_unnumbered/clab-evpn_unnumbered/frr1",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:9.0.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-9414e37772d9",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/evpn_unnumbered/clab-evpn_unnumbered/frr1",
+        "clab-node-name": "frr1",
+        "clab-node-type": "",
+        "clab-topo-file": "/home/evpn_unnumbered/evpn_unnumbered.yml",
+        "containerlab": "evpn_unnumbered"
+      },
+      "port-bindings": [
+      ]
+    },
+    "frr2": {
+      "index": "1",
+      "shortname": "frr2",
+      "longname": "frr2",
+      "fqdn": "frr2.evpn_unnumbered.io",
+      "group": "",
+      "labdir": "/home/evpn_unnumbered/clab-evpn_unnumbered/frr2",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:9.0.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-9414e37772d9",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/evpn_unnumbered/clab-evpn_unnumbered/frr2",
+        "clab-node-name": "frr2",
+        "clab-node-type": "",
+        "clab-topo-file": "/home/evpn_unnumbered/evpn_unnumbered.yml",
+        "containerlab": "evpn_unnumbered"
+      },
+      "port-bindings": [
+      ]
+    },
+    "leaf1": {
+      "index": "2",
+      "shortname": "leaf1",
+      "longname": "leaf1",
+      "fqdn": "leaf1.evpn_unnumbered.io",
+      "group": "",
+      "labdir": "/home/evpn_unnumbered/clab-evpn_unnumbered/leaf1",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux:23.10.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:10:02:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-9414e37772d9",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/home/evpn_unnumbered/clab-evpn_unnumbered/leaf1",
+        "clab-node-name": "leaf1",
+        "clab-node-type": "ixrd2l",
+        "clab-topo-file": "/home/evpn_unnumbered/evpn_unnumbered.yml",
+        "containerlab": "evpn_unnumbered"
+      },
+      "port-bindings": [
+      ]
+    },
+    "leaf2": {
+      "index": "3",
+      "shortname": "leaf2",
+      "longname": "leaf2",
+      "fqdn": "leaf2.evpn_unnumbered.io",
+      "group": "",
+      "labdir": "/home/evpn_unnumbered/clab-evpn_unnumbered/leaf2",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux:23.10.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:6b:03:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-9414e37772d9",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/home/evpn_unnumbered/clab-evpn_unnumbered/leaf2",
+        "clab-node-name": "leaf2",
+        "clab-node-type": "ixrd2l",
+        "clab-topo-file": "/home/evpn_unnumbered/evpn_unnumbered.yml",
+        "containerlab": "evpn_unnumbered"
+      },
+      "port-bindings": [
+      ]
+    },
+    "spine": {
+      "index": "4",
+      "shortname": "spine",
+      "longname": "spine",
+      "fqdn": "spine.evpn_unnumbered.io",
+      "group": "",
+      "labdir": "/home/evpn_unnumbered/clab-evpn_unnumbered/spine",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux:23.10.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:a2:04:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-9414e37772d9",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/home/evpn_unnumbered/clab-evpn_unnumbered/spine",
+        "clab-node-name": "spine",
+        "clab-node-type": "ixrd3l",
+        "clab-topo-file": "/home/evpn_unnumbered/evpn_unnumbered.yml",
+        "containerlab": "evpn_unnumbered"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "spine",
+        "interface": "e1-1",
+        "mac": "aa:c1:ab:95:9a:53",
+        "peer": "z"
+      },
+      "z": {
+        "node": "leaf1",
+        "interface": "e1-49",
+        "mac": "aa:c1:ab:30:8a:87",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "spine",
+        "interface": "e1-2",
+        "mac": "aa:c1:ab:fc:0c:4a",
+        "peer": "z"
+      },
+      "z": {
+        "node": "leaf2",
+        "interface": "e1-49",
+        "mac": "aa:c1:ab:38:26:a5",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "leaf1",
+        "interface": "e1-1",
+        "mac": "aa:c1:ab:84:28:05",
+        "peer": "z"
+      },
+      "z": {
+        "node": "frr1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:67:fc:9a",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "leaf2",
+        "interface": "e1-1",
+        "mac": "aa:c1:ab:cb:10:a4",
+        "peer": "z"
+      },
+      "z": {
+        "node": "frr2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:51:4d:d9",
+        "peer": "a"
+      }
+    }
+  ]
+}
