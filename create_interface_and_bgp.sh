@@ -28,8 +28,8 @@ deploy() {
             --update-path "/interface[name=$interface_name]/subinterface[index=$ndx]/ipv6/admin-state" --update-value "enable" \
             --update-path "/interface[name=$interface_name]/subinterface[index=$ndx]/ipv6/address[ip-prefix=$prefix]/primary" --update-value "{}" \
             --update-path "/network-instance[name=default]/interface[name=$interface_name.$ndx]" --update-value "{}" \
-            --update-path "/network-instance[name=default]/protocols/bgp/dynamic-neighbors/interface[interface-name=$interface_name.$ndx]/peer-group" --update-value "scaling"
-
+            --update-path "/network-instance[name=default]/protocols/bgp/dynamic-neighbors/interface[interface-name=$interface_name.$ndx]/peer-group" --update-value "scaling" \
+            --update-path "/bfd/subinterface[id=$interface_name.$ndx]/admin-state" --update-value "enable"
         # Increment ndx for the next iteration
         ndx=$((ndx + 2))
     done
