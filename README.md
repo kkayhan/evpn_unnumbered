@@ -1,6 +1,6 @@
 
 ## Fabric Image
-![Fabric](/fabric.png)
+![Fabric](/images/fabric.png)
 
 ## Overlay Image
-![Overlay](/overlay.png)
+![Overlay](/images/overlay.png)
