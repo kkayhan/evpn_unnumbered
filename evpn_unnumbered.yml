@@ -6,7 +6,7 @@ topology:
     kind: nokia_srlinux
   kinds:
     nokia_srlinux:
-      image: ghcr.io/nokia/srlinux:24.3.1
+      image: ghcr.io/nokia/srlinux:24.3.2
     linux:
       image: quay.io/frrouting/frr:9.0.2
 
