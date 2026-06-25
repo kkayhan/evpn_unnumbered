@@ -1,0 +1,9 @@
+# containerlab runtime artifacts (regenerated on every deploy)
+clab-*/
+.clab/
+*.bak
+*.log
+topology-data.json
+ansible-inventory.yml
+authorized_keys
+.tls/
